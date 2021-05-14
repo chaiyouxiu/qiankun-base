@@ -8,7 +8,6 @@ const permission = {
   mutations: {
     // 存储所有菜单信息
     setMenu (state, menu) {
-      debugger
       Cookies.set('menu', JSON.stringify(menu))
       state.menu = menu
     },

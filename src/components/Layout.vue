@@ -14,7 +14,7 @@
       <a @click="signOut" style="color: #409eff; text-decoration: underline; float: right; line-height: 60px">退出登录</a>
     </div>
     <div v-show="!$route.name" id="vue" ref="vue"></div>
-    <div v-show="!$route.name" id="react"></div>
+    <!-- <div v-show="!$route.name" id="react"></div> -->
     <Permission ref="permission" @pemission="refreshPermission"></Permission>
   </div>
 </template>

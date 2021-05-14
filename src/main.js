@@ -10,7 +10,7 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import '@/login.js'
 import '@/mock'
-import {registerMicroApps} from 'qiankun'
+import { registerMicroApps, start } from 'qiankun'
 
 Vue.config.productionTip = false
 Vue.use(ElementUI)
@@ -25,7 +25,7 @@ const apps = [
   }
 ]
 registerMicroApps(apps)
-// start()
+start()
 
 /* eslint-disable no-new */
 new Vue({

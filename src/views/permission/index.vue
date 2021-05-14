@@ -59,9 +59,8 @@ export default {
   watch: {
     curProject: {
       handler (val) {
-        debugger
         if (val) {
-           // 设置勾选节点的数组
+          // 设置勾选节点的数组
           console.log(this.$store.getters)
           const checkNodes = this.$store.getters.getPermission || {}
           this.menuTree = this.$store.getters.menu ? this.$store.getters.menu[val] : []
@@ -78,7 +77,6 @@ export default {
   },
   methods: {
     show () {
-      debugger
       this.drawer = true
       this.$nextTick(() => {
         if (!this.curProject) {
